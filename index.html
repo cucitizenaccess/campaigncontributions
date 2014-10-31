@@ -67,7 +67,7 @@
     <div id='map'>
         <div id='sidebar'>
             <h4>Campaign Contributions</h4>
-            <p>This map shows where contributions from each candidate are made as of Oct. 31, 2014</p>
+            <p>This map shows where contributions from each candidate between Jan. 1, 2013 and Oct. 31, 2014</p>
             <h5>Choose a candidate:</h5>
             <div class="btn-group">
                 <button type="button" onclick="switchCandidate('rauner')" class="btn btn-default candidate-button" candidate="rauner">Bruce Rauner</button>
@@ -173,7 +173,8 @@
         // load json
         map_zone = L.geoJson(map_layer, {
             style: getStyle,
-            onEachFeature: onEachFeature
+            onEachFeature: onEachFeature,
+            doubleClickZoom: true
         }).addTo(map);
     }
 
