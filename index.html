@@ -269,7 +269,7 @@
                     if (rr.group == record.group && record.note && map_place == record.type) {
                         $('#information').append('' +
                                 '<div class="record">' +
-                                '<h5>' + record.group + '</h5>' +
+                                '<h5 style="color: #2b8cbe;">' + record.group + '</h5>' +
                                 '<p style="font-size: 8px;">' + record.note + '</p>' +
                                 '<p>' + accounting.formatMoney(rr.total) + '</p>' +
                                 '</div>')
@@ -277,7 +277,7 @@
                     else if (rr.group == record.group && map_place == record.type) {
                         $('#information').append('' +
                                 '<div class="record">' +
-                                '<h5>' + record.group + '</h5>' +
+                                '<h5 style="color: #2b8cbe;">' + record.group + '</h5>' +
                                 '<p>' + accounting.formatMoney(rr.total) + '</p>' +
                                 '</div>')
                     }
