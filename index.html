@@ -269,18 +269,18 @@
                 for (var ii = 0, rr; rr = contributions.records[ii]; ii++) {
                     if (rr.group == record.group && record.note && map_place == record.type) {
                         $('#information').append('' +
-                                '<div class="record">' +
+                            '<div class="record">' +
                                 '<h5 style="color: #2b8cbe;">' + record.group + '</h5>' +
                                 '<p style="font-size: 8px;">' + record.note + '</p>' +
                                 '<p>' + accounting.formatMoney(rr.total) + '</p>' +
-                                '</div>')
+                            '</div>')
                     }
                     else if (rr.group == record.group && map_place == record.type) {
                         $('#information').append('' +
-                                '<div class="record">' +
+                            '<div class="record">' +
                                 '<h5 style="color: #2b8cbe;">' + record.group + '</h5>' +
                                 '<p>' + accounting.formatMoney(rr.total) + '</p>' +
-                                '</div>')
+                            '</div>')
                     }
                 }
             }
